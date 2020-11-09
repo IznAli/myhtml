@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-image: url('pingfight.gif');
+            text-align: center;
+        }
+        p{
+            border-style:dashed;
+            font-size:50px;
+            color:blue;
+            background-color:black;
+            border-width:10px;
+        }
+        * {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+    </style>
+    <title>Penguin Hub</title>
+</head>
+<body>
+    <div class="navbar">
+        <a class="active" href="#">Home</a> 
+        <a href="#">Search</a> 
+        <a href="#">Contact</a> 
+        <a href="#">Login</a>
+    </div>
+    <h1>Penguin Hub</h1>
+    <h2>My BILLIONTH paragraph.</h2><br>
+    <button class="glow-on-hover" type="button">Sign <i>me</i> up for the fun!</button>
+    <p id="pingupthingup"></p>
+    <button type="button" onclick='getElementById("pingupthingup").innerHTML="Nothing here... hehehe"'>Click me?</button>
+</body>
+</html>
