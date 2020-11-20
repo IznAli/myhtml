@@ -4,8 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
-            background-image: url('pingfight.gif');
+            background-image: url('byebyeseal.png');
             text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            background-image:url("thing.jpeg");
+            height:57px;
+            width:100px;
         }
         p{
             border-style:dashed;
@@ -13,51 +19,68 @@
             color:blue;
             background-color:black;
             border-width:10px;
+            border-color:#e62e00;
         }
         * {box-sizing: border-box}
-body {font-family: Arial, Helvetica, sans-serif;}
-
-.navbar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  width: 25%; /* Four links of equal widths */
-  text-align: center;
-}
-
-.navbar a:hover {
-  background-color: #000;
-}
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
+        .byecutie{
+            text-decoration:none;
+            color:blue;
+        }
+        .athing{
+            background-image:url("thing.jpeg");
+        }
+        .containerthing{
+            margin-top:48px;
+        }
+        .navbar {
+          width: 100%;
+          background-color: #555;
+          overflow: auto;
+          position: fixed;
+          top: 0;
+        }
+        
+        .navbar a {
+          float: left;
+          padding: 12px;
+          color: white;
+          text-decoration: none;
+          font-size: 17px;
+          width: 25%;
+          text-align: center;
+        }
+        
+        .navbar a:hover {
+          background-image:url("happyfeet.jpg");
+        }
+        @media screen and (max-width: 500px) {
+          .navbar a {
+            float: none;
+            display: block;
+            width: 100%;
+            text-align: left;
+          }
+        }
     </style>
     <title>Penguin Hub</title>
 </head>
 <body>
     <div class="navbar">
-        <a class="active" href="#">Home</a> 
-        <a href="#">Search</a> 
-        <a href="#">Contact</a> 
-        <a href="#">Login</a>
+        <a class="active" href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/penguin.html">Home</a> 
+        <a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/search.html">Search</a> 
+        <a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/gallery.html">Gallery</a> 
+        <a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/Login.html">Login</a>
     </div>
-    <h1>Penguin Hub</h1>
-    <h2>My BILLIONTH paragraph.</h2><br>
-    <button class="glow-on-hover" type="button">Sign <i>me</i> up for the fun!</button>
-    <p id="pingupthingup"></p>
-    <button type="button" onclick='getElementById("pingupthingup").innerHTML="Nothing here... hehehe"'>Click me?</button>
+    <div class="containerthing">
+        <h1>Penguin Hub</h1>
+        <h2>My BILLIONTH paragraph.</h2><br>
+        <p id="pingupthingup"></p>
+        <button type="button" onclick='getElementById("pingupthingup").innerHTML="Nothing here... hehehe"'>Click me?</button>
+        <p id="shutyassi"></p>
+        <button class="athing" type="button" onclick='getElementById("shutyassi").innerHTML="Hey, who turned me into a penguin button??!?"'>Click me!</button>
+    </div>
+    <div>
+        <p>Play this to penguins on a piano;<br/> First find the middle <q>C</q> or <q>1</q> key. Click it two times, then find the <q>G</q> or <q>5</q> key. If this is too hard for you then <span style="text-decoration:none; color:blue;"><a href="https://www.google.com/search?q=piano+notes+for+twinkle+twinkle+little+star&safe=active&rlz=1CAMLYC_enUS926&sxsrf=ALeKk01YKbH7UKGwpg0vR5Rn3RnYcI3F4g:1605462320182&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi0p62ajYXtAhXSF1kFHTu0A44Q_AUoAXoECBwQAw&biw=1920&bih=977">click here.</a></span> </p>
+    </div>
 </body>
 </html>
