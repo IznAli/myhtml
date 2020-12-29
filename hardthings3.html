@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0;
+background-image: url('keowl.jpg');
+text-align:center
+}
+#clock {
+  font-family: 'Orbitron', sans-serif;
+  color: yellow;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-style:solid;
+}
+.pingblah{
+    background-image: url('keowl.jpg');
+    color:white;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 25px;
+}
+.mySlides {display: none; text-align:center;}
+/*.mySlides:hover{display: none; text-align:center;  transform: scale(1.2);}*/
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top:100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: green;
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  /*padding: 8px 12px;*/
+  /*position: fixed;*/
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+.text p{
+    display: none;
+    color:yellow;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: orange;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.navbar {
+          width: 100%;
+          background-color: #555;
+          overflow: auto;
+          position: fixed;
+          top: 0;
+        }
+        
+        .navbar a {
+          float: left;
+          padding: 12px;
+          color: white;
+          text-decoration: none;
+          font-size: 17px;
+          width: 16.666666666667%;
+          text-align: center;
+        }
+        
+        .navbar a:hover {
+          background-image:url("happyfeet.jpg");
+        }
+        @media screen and (max-width: 500px) {
+          .navbar a {
+            float: none;
+            display: block;
+            width: 100%;
+          }
+        }
+</style>
+<title>Penguin Hub</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/penguin.html">Home <i class="fa fa-home"></i></a> 
+        <a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/search.html">Search <i class="fa fa-search"></i></a> 
+        <a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/gallery.html">Gallery <i class="fa fa-picture-o"></i></a> 
+        <a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/Login.html">Login <i class="fa fa-sign-in"></i></a>
+        <a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/Games.html">Games <i class="fa fa-gamepad"></i></a>
+        <a class="active" href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/hardthings3.html">Space <i class="fa fa-globe"></i></a>
+    </div>
+<div class="slideshow-container">
+    
+    <div id="clock"></div><br/>
+    <div class="mySlides fade">
+  <div class="numbertext">1 / 11</div>
+  <img src="bestnasagifyet.gif" style="width:90%;">
+    </div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 11</div>
+  <img src="temp.png" style="width:90%;">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("missuubs").style.display="block"'>The Sun</button>
+      <p id="missuubs">Our Sun is an ordinary star, just one among hundreds of billions of stars in the Milky Way Galaxy. The Sun is composed almost entirely of hydrogen and helium gas. Multimillion-degree temperatures in its dense core sustain nuclear fusion, providing the energy source for sunlight. The estiamted lifeline for the sun is five eons.</p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 11</div>
+  <img src="killerelement.png" style="width:40%;">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("flaaff").style.display="block"'>Mercury</button>
+      <p id="flaaff">Mercury was named after the Roman Goddess of happiness. The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense atmosphere.</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 11</div>
+  <img src="Venusii.png" style="width:48%">
+  <div class="text">
+  <button class="pingblah" type="button" onclick='getElementById("flaaffii").style.display="block"'>Venus</button>
+  <p id="flaaffii">Similar in size and structure to Earth, Venus has been called Earth's twin. These are not identical twins, however – there are radical differences between the two worlds. Venus has a thick, toxic atmosphere filled with carbon dioxide and it’s perpetually shrouded in thick, yellowish clouds of mostly sulfuric acid that trap heat, causing a runaway greenhouse effect. It’s the hottest planet in our solar system, even though Mercury is closer to the Sun. Venus has crushing air pressure at its surface – more than 90 times that of Earth – similar to the pressure you'd encounter a mile below the ocean on Earth.</p>
+  </div>
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 11</div>
+  <img src="beautisocool.png" style="width:50%">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("pingplup").style.display="block"'>Earth</button>
+  <p id="pingplup">Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things.
+While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.
+The name Earth is at least 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means “the ground.”
+
+</p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 11</div>
+  <img src="Mars.png" style="width:44%">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("stuffplufrf").style.display="block"'>Mars</button>
+      <p id="stuffplufrf">The fourth planet from the Sun, Mars is a dusty, cold, desert world with a very thin atmosphere
+This dynamic planet has seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.
+Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape. NASA currently has three spacecraft in orbit, and it has one rover and one lander on the surface. NASA launched the next-generation Perseverance rover to Mars on July 30, 2020. India and ESA have spacecraft in orbit above Mars. These robotic explorers have found lots of evidence that Mars was much wetter and warmer, with a thicker atmosphere, billions of years ago. </p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 11</div>
+  <img src="Jupiter.png" style="width:97%">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("pingsupthingsup").style.display="block"'>Jupiter</button>
+      <p id="pingsupthingsup">Jupiter has a long history surprising scientists—all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.
+Fifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system – more than twice as massive as all the other planets combined.
+Jupiter's familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter’s iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years.</p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 11</div>
+  <img src="RSaturn.png" style="width:80%">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("mingsuppingsup").style.display="block"'>Saturn</button>
+      <p id="mingsuppingsup">Twice every 29 and a half years the great planet Saturn appears ringless.Saturn's Rings Edge-on
+In one of nature's most dramatic examples of "now-you see-them, now-you-don't," NASA's Hubble Space Telescope captured Saturn as the planet's magnificent ring system turned edge-on. This is an optical illusion:
+Earthlings cannot see Saturn's rings when the rings are edge-on as viewed from the Earth. They are barely visible through powerful telescopes.
+Saturn isn’t the only planet to have rings, but it definitely has the most beautiful ones.
+The rings we see are made of groups of tiny ringlets that surround Saturn. They’re made of chunks of ice and rock.Like Jupiter, Saturn is mostly a ball of hydrogen and helium.
+</p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 11</div>
+  <img src="Uranus.png" style="width:80%">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("pingthing").style.display="block"'>Uranus</button>
+      <p id="pingthing">The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.
+It was two years later that the object was universally accepted as a new planet, in part because of observations by astronomer Johann Elert Bode. Herschel tried unsuccessfully to name his discovery Georgium Sidus after King George III. Instead the scientific community accepted Bode's suggestion to name it Uranus, the Greek god of the sky, as suggested by Bode.
+</p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 11</div>
+  <img src="theoneandonlyneptune.jpg" style="width:60%">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("yespluff").style.display="block"'>Neptune</button>
+      <p id="yespluff">The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.
+It was two years later that the object was universally accepted as a new planet, in part because of observations by astronomer Johann Elert Bode. Herschel tried unsuccessfully to name his discovery Georgium Sidus after King George III. Instead the scientific community accepted Bode's suggestion to name it Uranus, the Greek god of the sky, as suggested by Bode.​
+
+</p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 11</div>
+  <img src="pltuo.jpg" style="width:30%">
+  <div class="text">
+      <button class="pingblah" type="button" onclick='getElementById("yespluffg").style.display="block"'>Pluto</button>
+      <p id="yespluffg">Pluto’s classification as a planet has had a history of changes. Since 2006, per the International Astronomical Union’s planetary criteria, Pluto isn’t considered a planet because it hasn’t cleared the neighborhood around its orbit of other objects. However, it does meet IAU’s criteria for what constitutes a dwarf planet.
+Pluto – which is smaller than Earth’s Moon – has a heart-shaped glacier that’s the size of Texas and Oklahoma. This fascinating world has blue skies, spinning moons, mountains as high as the Rockies, and it snows – but the snow is red.
+On July 14, 2015, NASA’s New Horizons spacecraft made its historic flight through the Pluto system – providing the first close-up images of Pluto and its moons and collecting other data that has transformed our understanding of these mysterious worlds on the solar system’s outer frontier.
+In the years since that groundbreaking flyby, nearly every conjecture about Pluto possibly being an inert ball of ice has been thrown out the window or flipped on its head.
+“It’s clear to me that the solar system saved the best for last!” said Alan Stern, New Horizons principal investigator from the Southwest Research Institute, Boulder, Colorado. “We could not have explored a more fascinating or scientifically important planet at the edge of our solar system. The New Horizons team worked for 15 years to plan and execute this flyby and Pluto paid us back in spades!”</p>
+  </div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script>
+function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec);
+  document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+    var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+}
+
+function updateTime(k) {
+  if (k < 10) {
+    return "0" + k;
+  }
+  else {
+    return k;
+  }
+}
+
+currentTime(); /* calling currentTime() function to initiate the process */
+</script>
+</body>
+</html>

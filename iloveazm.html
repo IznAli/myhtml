@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Penguin Hub</title>
+  <style>
+  /* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev, .next{
+    font-size:59px
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(50,1,50,0.8);
+}
+  #fluffid{
+      text-align:center;
+  }
+    #div1, #div2 {
+  width: 540px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  text-align:center;
+}
+#div1{
+    font-size:15px;
+}
+#pingup, #pingup1, #pingup2{
+    display:none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 235px;
+  border: 1px solid #888;
+  width: 80%;
+  color:red;
+}
+a{
+    text-decoration:none;
+    color:green;
+    font-size:30px;
+    }
+</style>
+    <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+  document.getElementById("fluffid").style.display = "block";
+    document.getElementById("flupluff").style.display = "block";
+    document.getElementById("pinzer").style.display = "block";
+    document.getElementById("pingup").style.display="block";
+    document.getElementById("pingup1").style.display="block";
+    document.getElementById("pingup2").style.display="block";
+}
+function myfunction(imgid,btnid){
+    document.getElementById(imgid).src="openpiston.jpg";
+    // setTimeout(function(){alert("plupflupfluff");}, 1000);
+// Get the modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById(btnid);
+  modal.style.display = "block";
+}
+
+</script>
+</head>
+<body>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="drag1" draggable="true" src="idiots.jpg" height="280" width="500" ondragstart="drag(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <button id="pingup" type="button" onclick='myfunction("fluffid","pingup")'>You sure?</button><br/>
+    <img id="fluffid" src="minecraft.png" style="display:none">
+    <button id="pingup1" type="button" onclick='myfunction("flupluff","pingup1")'>You sure?</button><br/>
+    <img id="flupluff" src="minecraft.png" style="display:none">
+    <button id="pingup2" type="button" onclick='getElementById("pinzer").src="youwin.png"'>You sure?</button><br/>
+    <img id="pinzer" src="minecraft.png" style="display:none">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+  <div class="modal-content">
+    <h1>You Died!</h1>
+    <p>Press refresh to respawn.</p>
+  </div>
+</div><br/>
+<a href="file:///home/chronos/u-58646cdc545b3b2b1e15f23cf123580c0fbfc7ca/MyFiles/coding/iznhtml/Games.html">Other games</a>
+</body>
+</html>
